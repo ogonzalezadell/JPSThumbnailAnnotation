@@ -112,7 +112,7 @@ static CGFloat const kJPSThumbnailAnnotationViewAnimationDuration = 0.25f;
                                          self.frame.size.width + kJPSThumbnailAnnotationViewExpandOffset-20,
                                          self.frame.size.height-33);
     
-    [_disclosureButton addTarget:self action:@selector(didTapDisclosureButton) forControlEvents:UIControlEventTouchDown];
+    [_disclosureButton addTarget:self action:@selector(didTapDisclosureButton) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:_disclosureButton];
 }
 
